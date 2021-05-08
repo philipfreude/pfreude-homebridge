@@ -5,8 +5,10 @@
 # @example
 #   include homebridge
 class homebridge (
-  String $version                = 'latest',
-  String $nodejs_repo_url_suffix = '14.x',
+  String  $version                = 'latest',
+  String  $nodejs_repo_url_suffix = '14.x',
+  String  $ui_ensure              = 'installed',
+  Boolean $ui_enabled             = true,
 ) {
   contain homebridge::install
   contain homebridge::config

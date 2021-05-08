@@ -13,9 +13,9 @@ class homebridge::install {
     ensure   => $homebridge::version,
     provider => 'npm',
     require  => Class['nodejs'],
-  } ->
+  }
   package { 'homebridge-config-ui-x':
-    ensure   => 'installed',
+    ensure   => $homebridge::ui_ensure,
     provider => 'npm',
   }
 

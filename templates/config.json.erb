@@ -12,5 +12,13 @@
   ],
 
   "platforms": [
+    <% if scope.lookupvar("homebridge::ui_enabled") -%>
+    {
+      "platform": "config",
+      "name": "Config",
+      "port": 8080,
+      "sudo": false
+    }
+    <% end -%>
   ]
 }
