@@ -1,24 +1,24 @@
 {
-  "bridge": {
-    "name": "Homebridge",
-    "username": "CC:22:3D:E3:CE:30",
-    "port": 39005,
-    "pin": "031-45-154"
-  },
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 39005,
+        "pin": "031-45-154"
+    },
 
-  "description": "Here is where you configure any modules you install.",
+    "description": "Here is where you configure any modules you install.",
 
-  "accessories": [
-  ],
+    "accessories": [
+    ],
 
-  "platforms": [
-    <% if scope.lookupvar("homebridge::ui_enabled") -%>
-    {
-      "platform": "config",
-      "name": "Config",
-      "port": 8080,
-      "sudo": false
-    }
-    <% end -%>
-  ]
+    "platforms": [
+        <%- if scope.lookupvar("homebridge::ui_enabled") %>
+        {
+            "platform": "config",
+            "name": "Config",
+            "port": 8080,
+            "sudo": false
+        }
+      <%- end %>
+    ]
 }
