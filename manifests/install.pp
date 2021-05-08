@@ -15,4 +15,17 @@ class homebridge::install {
     require  => Class['nodejs'],
   }
 
+  file { '/etc/default/homebridge':
+    ensure => 'present',
+    source => 'homebridge/homebridge.env',
+  }
+  file { '/etc/systemd/system/homebridge.service':
+    ensure => 'present',
+    source => 'homebridge/homebridge.service',
+  }
+  file { '/root/.homebridge':
+    ensure => 'directory',
+    mode   => '0755',
+  }
+
 }

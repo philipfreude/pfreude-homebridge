@@ -4,4 +4,10 @@
 # @api private
 #
 class homebridge::service {
+
+  service { 'homebridge':
+    enable  => true,
+    ensure  => 'running',
+  }
+
 }
