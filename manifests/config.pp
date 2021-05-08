@@ -8,7 +8,7 @@ class homebridge::config {
   file { '/root/.homebridge/config.json':
     ensure  => 'present',
     content => template('homebridge/config.json.erb'),
-    replace => true,
+    replace => false,
   }
 
 }
