@@ -17,11 +17,11 @@ class homebridge::install {
 
   file { '/etc/default/homebridge':
     ensure => 'present',
-    source => 'homebridge/homebridge.env',
+    source => 'puppet:///modules/homebridge/homebridge.env',
   }
   file { '/etc/systemd/system/homebridge.service':
     ensure => 'present',
-    source => 'homebridge/homebridge.service',
+    source => 'puppet:///modules/homebridge/homebridge.service',
   }
   file { '/root/.homebridge':
     ensure => 'directory',
