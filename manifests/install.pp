@@ -6,7 +6,8 @@
 class homebridge::install {
 
   class { 'nodejs':
-    repo_url_suffix => $homebridge::nodejs_repo_url_suffix,
+    repo_url_suffix       => $homebridge::nodejs_repo_url_suffix,
+    nodejs_package_ensure => latest,
   }
 
   package { 'homebridge':
