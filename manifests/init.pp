@@ -2,6 +2,15 @@
 #
 # A description of what this class does
 #
+# @param version
+#   Homebridge version to install
+# @param nodejs_repo_url_suffix
+#   Nodejs repo version to install
+# @param ui_ensure
+#   Install the ui package
+# @param ui_enabled
+#   Enable the ui
+#
 # @example
 #   include homebridge
 class homebridge (
