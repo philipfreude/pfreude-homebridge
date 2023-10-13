@@ -6,3 +6,7 @@ fixtures:
     apt: "puppetlabs/apt"
     nodejs: "puppet/nodejs"
     stdlib: "puppetlabs/stdlib"
+  repositories:
+    facts: 'https://github.com/puppetlabs/puppetlabs-facts.git'
+    provision: 'https://github.com/puppetlabs/provision'
+    puppet_agent: 'https://github.com/puppetlabs/puppetlabs-puppet_agent.git'
