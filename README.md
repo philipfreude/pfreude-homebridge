@@ -9,13 +9,13 @@ information to include in your README.
 ## Table of Contents
 
 1. [Description](#description)
-1. [Setup - The basics of getting started with homebridge](#setup)
+2. [Setup - The basics of getting started with homebridge](#setup)
     * [What homebridge affects](#what-homebridge-affects)
     * [Setup requirements](#setup-requirements)
     * [Beginning with homebridge](#beginning-with-homebridge)
-1. [Usage - Configuration options and additional functionality](#usage)
-1. [Limitations - OS compatibility, etc.](#limitations)
-1. [Development - Guide for contributing to the module](#development)
+3. [Usage - Configuration options and additional functionality](#usage)
+4. [Limitations - OS compatibility, etc.](#limitations)
+5. [Development - Guide for contributing to the module](#development)
 
 ## Description
 
